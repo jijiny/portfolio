@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style type="text/css">
+	.typing-txt{display: none;}
+.typeing-txt ul{list-style:none;}
+.typing {
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+</style>
 <head>
 
   <meta charset="utf-8">
@@ -59,11 +74,20 @@
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+    <div class="container h-100">
+      <div class="intro-text row h-100 align-items-center justify-content-center text-center">
+      <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold typing"></h1>
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+        </div>
+        <div class="typing-txt"> 
+  			<ul>
+    			<li>개발자 조홍철의 포트폴리오입니다.</li>
+    			<li>Web Programmer</li>
+    			<li>Hello, My name is HongCheol</li>
+			</ul>
+		</div>
       </div>
     </div>
   </header>
@@ -709,6 +733,8 @@
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
 
+  <!-- Custom scripts for this template -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
